@@ -243,4 +243,5 @@
 Harness 4단계는 이 계획을 작성 모델(Claude)과 다른 계열 모델이 검토하고 사람이 승인하도록 한다. 검토 결과는 `docs/reviews/`에 Harness §3 ② 양식으로 남긴다.
 
 - r1(2026-11-08, Gemini): 치명 3·중요 9·사소 1. 반영 내역은 [reviews/03-review-r1.md](reviews/03-review-r1.md).
-- r2(2026-11-08, Gemini): 치명 1·중요 4·사소 1. 반영 내역은 [reviews/03-review-r2.md](reviews/03-review-r2.md). 치명·중요가 있었으므로 마지막 회차(r3)로 재검증한다.
+- r2(2026-11-08, Gemini): 치명 1·중요 4·사소 1. 반영 내역은 [reviews/03-review-r2.md](reviews/03-review-r2.md).
+- 2회차로 교차 검증을 마친다(사람 결정, 2026-11-08). 이유와 남는 위험은 r2 리뷰 파일 「종료 결정」에 있다.
