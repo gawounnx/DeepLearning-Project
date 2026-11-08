@@ -155,3 +155,4 @@ W5(12/06~12/10)는 여유 주간, W6(12/11~12/14)은 발표 준비 주간이라 
 
 - 2026-11-08 · 공동 · `AGENTS.md`·`docs/progress.md` 작성, 중복 ADR 삭제, 링크 수정, ADR 0005(uv+npm) 작성 및 H-03 통과 처리. 다음: H-04 verify 명령 정의 및 W1 Task 착수
 - 2026-11-08 · 고용민 · Claude Code(Claude Opus 5.5) · `docs/03-plan.md` 작성(공통 기반 고용민·병합 차가원, H-04~W4-03 하위 티켓 분해, 결정 필요 D1~D13), AGENTS §2·§7 갱신. 다음: 차가원 리뷰·교차 검증 후 harness 브랜치 `main` 병합, W1-01a·W1-05a 착수
+- 2026-11-08 · 고용민 · Claude Code(Claude Opus 5.5) · 차가원 승인(고용민 전달)을 `docs/reviews/03-review-r1.md`에 기록, 다른 계열 모델 교차 검증은 병합 뒤로 미루기로 사람이 결정, `feat/harness-setup`을 `main`에 병합. 다음: 교차 검증, W1-08a(SPEC 역할 절), W1-01a·W1-05a 착수
