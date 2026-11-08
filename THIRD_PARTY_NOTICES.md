@@ -15,14 +15,23 @@ LawLens 프로젝트 자체의 코드·문서는 이 고지의 대상이 아니�
 | fastapi | https://github.com/fastapi/fastapi | `.agents/skills/fastapi` | MIT | Copyright (c) 2018 Sebastián Ramírez |
 | playwright-cli | https://github.com/microsoft/playwright-cli | `skills/playwright-cli` | Apache-2.0 | Copyright (c) Microsoft Corporation |
 | vercel-react-best-practices | https://github.com/vercel-labs/agent-skills | `skills/react-best-practices` | MIT (원저작자 선언) | Vercel Engineering (아래 참고) |
+| verification-before-completion | https://github.com/obra/superpowers | `skills/verification-before-completion` | MIT | Copyright (c) 2025 Jesse Vincent |
+| finishing-a-development-branch | https://github.com/obra/superpowers | `skills/finishing-a-development-branch` | MIT | Copyright (c) 2025 Jesse Vincent |
+| code-review | https://github.com/mattpocock/skills | `skills/engineering/code-review` | MIT | Copyright (c) 2026 Matt Pocock |
+| setup-matt-pocock-skills | https://github.com/mattpocock/skills | `skills/engineering/setup-matt-pocock-skills` | MIT | Copyright (c) 2026 Matt Pocock |
 
 ## 라이선스 전문
 
 - fastapi → [third_party_licenses/fastapi-LICENSE.txt](third_party_licenses/fastapi-LICENSE.txt)
 - playwright-cli → [third_party_licenses/playwright-cli-LICENSE.txt](third_party_licenses/playwright-cli-LICENSE.txt) (Apache License 2.0 전문. 원본 저장소에 NOTICE 파일은 없다.)
 - vercel-react-best-practices → [third_party_licenses/vercel-react-best-practices-LICENSE.txt](third_party_licenses/vercel-react-best-practices-LICENSE.txt)
+- verification-before-completion, finishing-a-development-branch → [third_party_licenses/superpowers-LICENSE.txt](third_party_licenses/superpowers-LICENSE.txt)
+- code-review, setup-matt-pocock-skills → [third_party_licenses/mattpocock-skills-LICENSE.txt](third_party_licenses/mattpocock-skills-LICENSE.txt)
 
 ## 참고 사항
+
+- **추가 4종(2026-11-08)**: 설치 전 `SKILL.md`와 동봉 파일 전체를 검토했다. 검토한 커밋은 obra/superpowers `22f0b463e7a5e579904dd6211a520321035526f7`, mattpocock/skills `4ae2317ddb22b046e26455e4f9c9b3aaaf62212d`이며, 설치된 파일은 이 커밋의 파일과 SHA-256이 일치한다. 검토 기록은 [docs/reviews/skills-security-review.md](docs/reviews/skills-security-review.md).
+- **setup-matt-pocock-skills**: 설치만 했고 실행하지 않았다. 실행하면 `CLAUDE.md`가 있을 때 `CLAUDE.md`에 `## Agent skills` 블록을 쓰므로(AGENTS.md §9·Harness §4-3 ①과 충돌) 실행 전에 `AGENTS.md`에 쓰도록 지정하고 두 사람이 합의해야 한다.
 
 - **vercel-react-best-practices**: 원본 저장소는 LICENSE 파일과 저작권자·연도 표기를 두지 않고, README의 License 항목과 SKILL.md 머리말(`license: MIT`)에서 MIT라고만 밝힌다. 이 고지는 그 선언을 그대로 따르며, 저작권자 이름은 임의로 적지 않았다. 원저작자가 LICENSE 파일을 추가하면 그 내용으로 교체한다.
 - **상표**: FastAPI, Playwright, Microsoft, Vercel 등 이름과 로고는 각 권리자의 상표이며, 이 저장소는 해당 권리자와 제휴하거나 보증받지 않았다.
