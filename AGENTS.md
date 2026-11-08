@@ -14,6 +14,7 @@ Antigravity·Claude Code·Codex가 함께 따르는 LawLens 공통 작업 규칙
 - `docs/SPEC.md`: 요구사항, 모듈 책임, **분석 결과 구조(API 계약)**, 테스트 결정, 범위 밖 항목.
 - `docs/GLOSSARY.md`: 용어 기준. SPEC과 충돌하면 GLOSSARY가 우선한다.
 - `docs/adr/`: 결정 기록. ADR과 충돌하는 변경은 코드보다 먼저 새 ADR을 제안한다.
+- `docs/03-plan.md`: 담당 표(트랙·공통 기반·병합), 체크포인트, 하위 티켓의 선행·완료 기준, 결정 필요 목록. 하위 티켓을 고치려면 사람이 정하고 이 파일부터 고친다.
 - `Harness.md`는 일반 운영 가이드다. LawLens 요구사항의 근거로 쓰지 않는다.
 - `docs/progress.md`: 세션 간 진행 상태. 세션을 시작하면 이 파일과 최근 커밋 로그를 먼저 읽는다. Task를 지우거나 완료 조건을 바꾸지 않는다(바꿔야 하면 사람이 결정하고 SPEC부터 고친다). 상태를 "통과"로 바꾸는 것은 실제로 검사를 실행한 증거가 있을 때만 한다.
 - 문서끼리 충돌하거나 SPEC에 없는 결정이 필요하면 추측해서 정하지 말고 보고한다.
@@ -61,10 +62,13 @@ Antigravity·Claude Code·Codex가 함께 따르는 LawLens 공통 작업 규칙
 ## 7. 협업 규칙
 
 - 담당: 고용민 — `ml/`, `backend/app/{judgment,retrieval,summary,pipeline,api}` / 차가원 — `backend/app/{ingestion,relations,graph}`, `frontend/`. 다른 담당자의 디렉터리를 크게 바꿔야 하면 멈추고 보고한다.
-- 공통 파일(분석 결과 구조, `docs/SPEC.md`·`docs/GLOSSARY.md`·`docs/adr/`, 의존성·잠금 파일)은 두 사람의 합의 없이 바꾸지 않는다.
+- 공통 기반 담당은 고용민, 병합 담당은 차가원이다(`docs/03-plan.md` §1~2).
+- 공통 기반 파일(SPEC「분석 결과 구조」와 공유 타입, `pyproject.toml`·`uv.lock`·`frontend/package.json`·`frontend/package-lock.json`, `.env.example`, 저장 방식, 라우터 구조)은 공통 기반 담당만 수정한다. 다른 사람은 먼저 알리고 승인을 받은 뒤 수정한다. 에이전트는 이 파일들을 고쳐야 하면 멈추고 보고한다.
+- `docs/SPEC.md`(위 계약 절 외)·`docs/GLOSSARY.md`·`docs/adr/`는 두 사람의 합의 없이 바꾸지 않는다.
 - API 응답 형식은 **SPEC의 「분석 결과 구조」를 먼저 고치고** 백엔드·프론트 코드를 바꾼다.
 - 패키지 관리 도구는 Python `uv`, Node `npm`으로 통일한다 (ADR 0005). 에이전트가 임의로 다른 도구(conda, poetry, pnpm, yarn 등)를 쓰지 않으며, 의존성 변경 시 잠금 파일(`uv.lock`, `package-lock.json`)을 함께 갱신한다.
-- 기능 브랜치에서 작업하고 `main`에 직접 커밋하지 않는다. PR은 `.github/pull_request_template.md`의 확인 항목을 채운다.
+- 기능 브랜치(`feat/<티켓ID>-<짧은이름>`)에서 작업하고 `main`에 직접 커밋하지 않는다. PR은 `.github/pull_request_template.md`의 확인 항목을 채운다.
+- PR 작성자가 상대의 리뷰 승인을 받은 뒤 병합한다. 충돌 해결이 어려우면 병합 담당이 맡는다. 병합 전에 최신 `main`을 반영하고 관련 검사를 다시 실행한다.
 
 ## 8. Skills
 
