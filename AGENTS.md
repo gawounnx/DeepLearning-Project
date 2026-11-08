@@ -67,8 +67,8 @@ Antigravity·Claude Code·Codex가 함께 따르는 LawLens 공통 작업 규칙
 - `docs/SPEC.md`(위 계약 절 외)·`docs/GLOSSARY.md`·`docs/adr/`는 두 사람의 합의 없이 바꾸지 않는다.
 - API 응답 형식은 **SPEC의 「분석 결과 구조」를 먼저 고치고** 백엔드·프론트 코드를 바꾼다.
 - 패키지 관리 도구는 Python `uv`, Node `npm`으로 통일한다 (ADR 0005). 에이전트가 임의로 다른 도구(conda, poetry, pnpm, yarn 등)를 쓰지 않으며, 의존성 변경 시 잠금 파일(`uv.lock`, `package-lock.json`)을 함께 갱신한다.
-- 기능 브랜치(`feat/<티켓ID>-<짧은이름>`)에서 작업하고 `main`에 직접 커밋하지 않는다. PR은 `.github/pull_request_template.md`의 확인 항목을 채운다.
-- PR 작성자가 상대의 리뷰 승인을 받은 뒤 병합한다. 충돌 해결이 어려우면 병합 담당이 맡는다. 병합 전에 최신 `main`을 반영하고 관련 검사를 다시 실행한다.
+- 커밋과 푸시는 `main`에서 직접 진행한다(2026-11-08 사람 결정). 기능 브랜치와 PR은 필수가 아니며, PR을 쓸 때는 `.github/pull_request_template.md`의 확인 항목을 채운다.
+- 푸시 전에 최신 `main`을 반영하고 관련 검사를 다시 실행한다. 충돌 해결이 어려우면 병합 담당이 맡는다. 강제 푸시는 하지 않는다(§10).
 
 ## 8. Skills
 
