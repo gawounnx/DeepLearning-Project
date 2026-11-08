@@ -11,7 +11,7 @@
 |---|---|
 | [SPEC.md](SPEC.md) | 요구사항 명세서 |
 | [GLOSSARY.md](GLOSSARY.md) | 도메인 용어집 (코드·문서 용어의 기준) |
-| [docs/adr/](docs/adr/) | 결정 기록 (ADR 0001~0004) |
+| [adr/](adr/) | 결정 기록 (ADR 0001~0005) |
 
 ## 디렉터리 구조
 

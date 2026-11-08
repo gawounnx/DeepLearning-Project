@@ -14,7 +14,7 @@
 | [docs/README.md](docs/README.md) | 상세 소개 및 아키텍처 개요 |
 | [docs/SPEC.md](docs/SPEC.md) | 요구사항 명세서 |
 | [docs/GLOSSARY.md](docs/GLOSSARY.md) | 도메인 용어집 (코드·문서 용어의 기준) |
-| [docs/adr/](docs/adr/) | 아키텍처 결정 기록 (ADR 0001~0004) |
+| [docs/adr/](docs/adr/) | 아키텍처 결정 기록 (ADR 0001~0005) |
 
 ---
 
