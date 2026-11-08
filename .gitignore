@@ -1,0 +1,44 @@
+# ── 데이터·모델 (AI Hub 원본·가공 데이터와 가중치는 커밋하지 않음) ──
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+runs/
+outputs/
+wandb/
+mlruns/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# ── Node / Frontend ──
+node_modules/
+dist/
+.vite/
+
+# ── 환경·개인 설정 ──
+.env
+.env.*
+!.env.example
+CLAUDE.local.md
+.claude/settings.local.json
+
+# ── OS / IDE ──
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
